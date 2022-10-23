@@ -1,0 +1,26 @@
+<div class='container mt-5'>
+    <div class='d-flex row' >
+        <div  class='col-lg-8' style="border: 2px solid ;">
+           <div class='col-lg-12' style="margin-left: -10px;"><h4>Contact Us</h4></div>
+                <form  id='donationForm' method="post" , action="/donation" style="margin-top: 25px ;">
+                   <div class='form-group'>
+                        <label>Your email</label>
+                        <input type='text' name="source_location" class='form-control' placeholder='Your Email '></input>
+                    </div>
+                    <div class='form-group'>
+                        <label>Subject</label>
+                        <input type='hidden' name='_csrf' value='{{csrfToken}}' />
+                        <input type='text' name="title" class='form-control' placeholder='Subject' />
+                    </div>
+                    <div class='form-group'>
+                        <label>Description</label>
+                        <textarea type='text' name="description" class='form-control' placeholder='Description ' ></textarea>
+                    </div>
+                 
+                <button type="submit">submit</button>
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+
