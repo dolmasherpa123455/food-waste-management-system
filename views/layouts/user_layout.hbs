@@ -1,0 +1,30 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <title>{{pageTitle}}</title>
+    <link rel='stylesheet' href='/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='/css/styles.css' />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'
+      integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+  </head>
+  <style>
+    .fdms-container {background-color: #D3D3D3; border: 2px solid #000000; padding: 20px; } .donation-cat-btn { padding: 10px;}
+  </style>
+  <body>
+    <div class='container-fluid fdms-container' style='display: grid;'>
+       {{> header}}
+       {{{body}}}
+    </div>
+    {{> footer}}
+    <script type='text/javascript' src='/js/jquery-3.5.1.min.js'></script>
+    <script type='text/javascript' src='/js/bootstrap.min.js'></script>
+  </body>
+</html>
